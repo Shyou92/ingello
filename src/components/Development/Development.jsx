@@ -20,7 +20,10 @@ function Development() {
             </p>
           </div>
 
-          <H2 className={dev.secondHeader}>INGELLO / SYSTEMS</H2>
+          <H2 className={dev.secondHeader}>
+            <span className={dev.capital}>I</span>NGELLO /
+            <span className={dev.sys}>SYS</span>TEMS
+          </H2>
         </div>
       </Container>
     </section>

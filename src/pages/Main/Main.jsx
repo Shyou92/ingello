@@ -1,11 +1,5 @@
-import Development from '../../components/Development/Development';
-
 function Main() {
-  return (
-    <section className='main'>
-      <Development />
-    </section>
-  );
+  return <section className='main'></section>;
 }
 
 export default Main;

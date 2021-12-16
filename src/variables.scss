@@ -6,17 +6,24 @@ $main-text-color: #fff;
 
 $fontFamily: 'Open Sans', sans-serif;
 
+$mobile: 768px;
+
 %fonts {
   font-family: $fontFamily;
   font-style: normal;
 }
 
 %fz-60-82 {
-  font-size: 60px;
-  line-height: 82px;
+  @include adaptive(font-size, 60, 20);
+  @include adaptive(line-height, 82, 27);
+}
+
+%fz-36-49 {
+  @include adaptive(font-size, 36, 10);
+  @include adaptive(line-height, 49, 14);
 }
 
 %fz-18-25 {
-  font-size: 18px;
-  line-height: 25px;
+  @include adaptive(font-size, 18, 12);
+  @include adaptive(line-height, 25, 16);
 }

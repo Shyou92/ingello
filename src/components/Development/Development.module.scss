@@ -1,20 +1,27 @@
 @import '../../variables.scss';
 
 .section {
+  width: 100%;
+  @include adaptive(padding-top, 355, 192);
+  @include adaptive(padding-bottom, 292, 16);
   background-color: $main-backgroundColor;
   background-image: url('./images/headerMain.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+
+  @media screen and (max-width: $mobile) {
+    background-position: top;
+  }
 }
 
 .wrapperText {
-  @include adaptive(width, 631, 439);
+  // @include adaptive(width, 631, 439);
   display: flex;
-}
 
-.wrapper {
-  display: flex;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .header {
@@ -22,6 +29,21 @@
   @extend %fz-60-82;
   color: $main-text-color;
   text-transform: uppercase;
+}
+
+.secondHeader {
+  @extend %fz-36-49;
+  color: $main-text-color;
+  align-self: center;
+  // @include adaptive(padding-left, 244, 65);
+}
+
+.capital {
+  color: $secondary-color;
+}
+
+.sys {
+  color: #000;
 }
 
 .subtext {
