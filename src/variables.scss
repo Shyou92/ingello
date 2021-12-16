@@ -1,0 +1,22 @@
+@import './mixins/mixins.scss';
+
+$main-backgroundColor: rgba(0, 10, 11, 1);
+$secondary-color: rgba(0, 209, 180, 1);
+$main-text-color: #fff;
+
+$fontFamily: 'Open Sans', sans-serif;
+
+%fonts {
+  font-family: $fontFamily;
+  font-style: normal;
+}
+
+%fz-60-82 {
+  font-size: 60px;
+  line-height: 82px;
+}
+
+%fz-18-25 {
+  font-size: 18px;
+  line-height: 25px;
+}

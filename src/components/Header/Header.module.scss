@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.section {
+  width: 100%;
+  @include adaptivePadding(padding, 25, 0, 4, 0);
+  background-color: $main-backgroundColor;
+}
+
+.logo {
+  @include adaptive(width, 221, 80);
+  @include adaptive(height, 89, 40);
+}
+
+.socialContainer {
+}

@@ -1,0 +1,9 @@
+@import '../../variables/variables.scss';
+
+.header {
+  @extend %fonts;
+  @extend %fz-64-18;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}

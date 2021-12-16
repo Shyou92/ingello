@@ -1,0 +1,9 @@
+.list {
+  list-style-type: none;
+
+  &__separated {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../variables.scss';
+
+.section {
+  background-color: $main-backgroundColor;
+  background-image: url('./images/headerMain.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.wrapperText {
+  @include adaptive(width, 631, 439);
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.header {
+  @extend %fonts;
+  @extend %fz-60-82;
+  color: $main-text-color;
+  text-transform: uppercase;
+}
+
+.subtext {
+  color: $secondary-color;
+}
+
+.subheader {
+  @extend %fz-18-25;
+  color: $main-text-color;
+}

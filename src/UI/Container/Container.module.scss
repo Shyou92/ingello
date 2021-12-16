@@ -1,0 +1,10 @@
+@import '../../mixins/mixins.scss';
+
+.container {
+  width: 100%;
+  max-width: $maxWidth + px;
+  margin: 0 auto;
+  @media screen and (max-width: ($breakPoint + px)) {
+    @include adaptivePadding(padding, 0, 38, 0, 21);
+  }
+}

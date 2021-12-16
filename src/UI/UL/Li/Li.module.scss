@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.listItem {
+  @extend %fonts;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  // color: $mainColor;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 18px;
+  //   height: 18px;
+  //   background: #fff;
+  //   border: none;
+  //   border-radius: 50%;
+  //   top: 0;
+  //   left: 77px;
+  // }
+
+  // &_separated {
+  //   &:nth-child(4) {
+  //     margin-bottom: 0;
+  //   }
+
+  //   &:nth-child(n + 5) {
+  //     padding-left: 57px;
+
+  //     &::before {
+  //       left: 20px;
+  //     }
+  //   }
+  // }
+}
